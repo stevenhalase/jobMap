@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Job Map</title>
+
+  <!-- Page css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/app.css" />
+
+  <!-- Google fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+
+  <!-- Google maps js -->
+  <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAiZxO34DATiEafQs2BOxuIS_T-UhAQ81U"></script>
+
+</head>
+<body>
+
+<!-- Jumbo header -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12 jumbotron">
+      <h1>Job Map</h1>
+      <span class="glyphicon glyphicon-search"></span>
+      <p>A place to <em>see</em> where the jobs are!</p>
+    </div>
+  </div>
+</div>
+
+<!-- Search boxes -->
+<div class="container-fluid search">
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4">
+      <div class="input-group">
+        <input id="jobsearched" size="10" maxlength="30" type="text" class="form-control" placeholder="Web Developer...">
+        <span class="input-group-btn">
+          <input id="location" size="10" maxlength="30" type="text" class="form-control" placeholder="Boulder">
+          <button onclick="searchJobs()" class="btn btn-default" type="button">Find jobs!</button>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Job results display -->
+<div class="container-fluid results">
+  <div class="row">
+    <div class="col-md-4 list-group">
+      <h2>Job Listings</h2>
+      <ul id="jobs" class="list-unstyled jobs">
+        <a class="list-group-item" href="" id="joblink0" target="_blank">
+        <li id="jobtitle0"></li>
+        <p id="jobcompany0"></p></a>
+        <a class="list-group-item" href="" id="joblink1" target="_blank">
+        <li id="jobtitle1"></li>
+        <p id="jobcompany1"></p></a>
+        <a class="list-group-item" href="" id="joblink2" target="_blank">
+        <li id="jobtitle2"></li>
+        <p id="jobcompany2"></p></a>
+        <a class="list-group-item" href="" id="joblink3" target="_blank">
+        <li id="jobtitle3"></li>
+        <p id="jobcompany3"></p></a>
+        <a class="list-group-item" href="" id="joblink4" target="_blank">
+        <li id="jobtitle4"></li>
+        <p id="jobcompany4"></p></a>
+      </ul>
+      <span id="powered">
+        <p> Powered by </p><img src="images/indeed.png" />
+    </div>
+
+    <div class="col-md-4">
+      <div class="list-group">
+        <h2>Local Meetings</h2>
+      <ul class="list-unstyled" id="upcoming">
+      </ul>
+      <span id="powered">
+        <p> Powered by </p><img src="images/meetup.png" />
+      </span>
+      </div>
+    </div>
+
+    <!-- Google Map results display -->
+    <div class="col-md-4">
+      <h2>Job Locations</h2>
+      <div id="googleMap" style="width:400px;height:300px;"></div>
+      <span id="powered">
+        <p> Powered by </p><img src="images/google.gif" />
+      </span>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid meetup">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-2">
+      <div class="list-group">
+      <ul class="list-unstyled" id="upcoming">
+      </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- jQuery / Bootstrap / Indeed JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/indeed.js"></script>
+
+<!-- Job Map js -->
+<script src="js/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+.jumbotron {
+  text-align: center;
+  margin: 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.jumbotron h1 {
+  color: #4da6ff;
+  font-weight: bolder;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.jumbotron p {
+  font-weight: lighter;
+  font-family: 'Droid Serif', serif;
+}
+
+.glyphicon {
+  font-size: 300%;
+}
+
+#location {
+}
+
+#jobsearched {
+}
+
+.services {
+  text-align: center;
+  background-color: #fafafa;
+  padding: 25px;
+  border-bottom: 1px solid #ccc;
+}
+.services img{
+  height: 100px;
+  width: 150px;
+  border: 2px solid #ccc;
+  border-radius: 10%;
+}
+
+.search {
+  text-align: center;
+  background-color: #4da6ff;
+  padding: 25px;
+}
+
+.results {
+  padding: 25px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+#jobs {
+  display: none;
+}
+
+.jobs li {
+  color: #4da6ff;
+  font-weight: bold;
+}
+
+#googleMap {
+  display: none;
+}
+
+#powered {
+  text-align: center;
+}
+
+#powered p{
+  display: inline;
+}
+
+#powered img{
+  height: 50px;
+  width: 100px;
+}
+
+.meetup {
+  background-color: #fafafa;
+  height: 300px;
+}
+
+.meetuplink {
+  color: #4da6ff;
+  font-weight: bold;
+}
+
+.meetupgroup {
+  color: #337ab7;
+  font-weight: normal;
+}
