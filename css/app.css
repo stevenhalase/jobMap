@@ -1,41 +1,72 @@
+body {
+  position: relative;
+  background: white;
+}
+
+.navbar {
+  background: rgba(0,0,0,0.8);
+  position:fixed;
+  width: 100%;
+  z-index: 4;
+  height: 50px;
+  border-radius: 0px;
+  margin-bottom: 0px;
+  border-bottom: 1px solid #555;
+}
+
+#logo {
+  margin: 5px;
+  width: 35px;
+  display: inline;
+}
+
+/*#brand {
+  font-weight: bold;
+  font-size: 26px;
+  color: #ccc;
+  margin: 3px;
+  float: right;
+}*/
+
+#brand:hover {
+  color: white;
+}
+
 .jumbotron {
+  height: 500px;
+  position: absolute;
+  z-index: 2;
+  background: rgba(0,0,0,0.5);
   text-align: center;
   margin: 0;
   border-bottom: 1px solid #ccc;
+  border-radius: 0px;
 }
 
 .jumbotron h1 {
+  padding-top: 75px;
   color: #4da6ff;
   font-weight: bolder;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 100px;
 }
 
 .jumbotron p {
+  color: white;
   font-weight: lighter;
   font-family: 'Droid Serif', serif;
 }
 
 .glyphicon {
+  color: white;
   font-size: 300%;
 }
 
 #location {
+  width: 150px;
 }
 
 #jobsearched {
-}
-
-.services {
-  text-align: center;
-  background-color: #fafafa;
-  padding: 25px;
-  border-bottom: 1px solid #ccc;
-}
-.services img{
-  height: 100px;
-  width: 150px;
-  border: 2px solid #ccc;
-  border-radius: 10%;
 }
 
 .search {
@@ -45,6 +76,7 @@
 }
 
 .results {
+  background-color: white;
   padding: 25px;
   text-align: center;
   border-bottom: 1px solid #ddd;
@@ -89,4 +121,52 @@
 .meetupgroup {
   color: #337ab7;
   font-weight: normal;
+}
+
+/***** BACKGROUND VIDEO ********/
+
+.homepage-hero-module {
+  max-height: 500px;
+  width: 100%;
+  overflow: hidden;
+  border-right: none;
+  border-left: none;
+  position: relative;
+  border-radius: 0px;
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
 }
